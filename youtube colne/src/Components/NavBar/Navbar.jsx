@@ -11,13 +11,16 @@ function Navbar() {
     return (
         <nav className='flex-div'>
             <div className='nav-left flex-div'>
-                <img src={menu_icon} />
-                <img className='logo' csrc={logo}/>
+                <img className='menu' src={menu_icon} />
+                <img className='logo' src={logo}/>
             </div>
 
-            <div className="navimiddle flex-div">
+            <div className="nav-middle flex-div">
+                <div className="search-box flex-div">
                 <input type='text' placeholder='search'/>
                 <img src={search_icon}/>
+                </div>
+             
             </div>
             <div className="nav-right flex-div">
                 <img src={upload_icon} alt="" />
