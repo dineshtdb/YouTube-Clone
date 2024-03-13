@@ -1,14 +1,17 @@
 import React from 'react';
 import './Home.css'
 import Sidebar from '../../Components/Sidebar/Sidebar';
-
-const Home=()=> {
+import Feed from '../../Components/feed/Feed';
+const Home=({sidebar})=> {
     return (
         <>
-         <Sidebar/>
+         <Sidebar sidebar={sidebar}/>
+         <div className={`container ${sidebar?"":"larger-container"}`}>
+            <Feed/>
+        </div> 
         </>
        
-    );
+    )
 }
 
-export default Home;
+export default Home
