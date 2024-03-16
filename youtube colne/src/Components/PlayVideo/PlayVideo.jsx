@@ -25,7 +25,7 @@ const PlayVideo=()=> {
           <div className="publisher">
             <img src={jack} />
             <div>
-                <p>Channel</p>
+                <p>Channel Name</p>
                 <span>0 Subscriber</span>
             </div>
             <button>Subscribe</button>
@@ -61,7 +61,6 @@ const PlayVideo=()=> {
                     </div>
                 </div>
             </div>
-          </div>
           <div className="comments">
                 <img src={user_profile}/>
                 <div>
@@ -75,7 +74,7 @@ const PlayVideo=()=> {
                     </div>
                 </div>
             </div>
-
+        </div>
         </div>
     );
 }
